@@ -1,7 +1,6 @@
 import React from "react";
 
 function DisplayEmployee(props){
-    console.log(props)
     const {fname,lname,age,address} = props;
     return(
         <div>

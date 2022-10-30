@@ -23,9 +23,9 @@ class CounterClass extends React.Component{
     render(){
         return(
             <div>
-               <Suspense fallback={<h1>Loading....</h1>}>
-               <Counter name={"sameer"} age={20} count={this.state.count} increment={this.increment} decrement={this.decrement}/>
-            </Suspense>
+                <Suspense fallback={<h1>Loading....</h1>}>
+                    <Counter name={"sameer"} age={20} count={this.state.count} increment={this.increment} decrement={this.decrement}/>
+                </Suspense>
                 
                 {/* {this.state.load && <Counter name={"sameer"} age={20} count={this.state.count} increment={this.increment} decrement={this.decrement}/>} */}
             </div>

@@ -13,6 +13,8 @@ import Person from './components/Person';
 import PersonFunction from "./components/PersonFunction";
 import FormByFunction from "./components/FormByFunction";
 import Header from './components/header';
+import Parent from './components/Parent';
+import Company from './components/company/Company';
 var cname=null;
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -32,7 +34,9 @@ root.render(
       {/* <Person/> */}
     {/* <PersonFunction/> */}
     {/* <FormByFunction/> */}
-    <Header/>
+    {/* <Header/> */}
+    {/* <Parent/> */}
+    <Company/>
     
     </div>
     
