@@ -15,6 +15,12 @@ import FormByFunction from "./components/FormByFunction";
 import Header from './components/header';
 import Parent from './components/Parent';
 import Company from './components/company/Company';
+import StateHook from './components/hooks/StateHook';
+import EffectHook from './components/hooks/EffectHook';
+import ReducerHook from './components/hooks/ReducerHook';
+import ContextHook from './components/hooks/ContextHook';
+import MemoHooks from './components/hooks/MemoHooks';
+import ReducerHookWithOnchange from './components/hooks/ReducerHookWithOnChnage';
 var cname=null;
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -36,7 +42,18 @@ root.render(
     {/* <FormByFunction/> */}
     {/* <Header/> */}
     {/* <Parent/> */}
-    <Company/>
+    {/* <Company/> */}
+
+   {/* /* REACT hooks */ }
+<StateHook/>
+<EffectHook/>
+<ReducerHook/>
+<ReducerHookWithOnchange/>
+
+<ContextHook/>
+
+<MemoHooks/>
+
     
     </div>
     
