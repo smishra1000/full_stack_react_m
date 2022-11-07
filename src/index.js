@@ -21,7 +21,13 @@ import ReducerHook from './components/hooks/ReducerHook';
 import ContextHook from './components/hooks/ContextHook';
 import MemoHooks from './components/hooks/MemoHooks';
 import ReducerHookWithOnchange from './components/hooks/ReducerHookWithOnChnage';
+import RefHooks from './components/hooks/RefHook';
+import DemoUseEffect from './components/hooks/DemoUseEffect'
+import { Provider } from 'react-redux';
+import {createStore} from"redux";
+import rootReducer from './reducers/rootReducer';
 var cname=null;
+const store = createStore(rootReducer)
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   // <React.StrictMode>
@@ -45,15 +51,21 @@ root.render(
     {/* <Company/> */}
 
    {/* /* REACT hooks */ }
-<StateHook/>
+{/* <StateHook/>
 <EffectHook/>
 <ReducerHook/>
 <ReducerHookWithOnchange/>
 
-<ContextHook/>
+<ContextHook/> */}
 
-<MemoHooks/>
+{/* <MemoHooks/> */}
+{/* <RefHooks/> */}
+{/* <EffectHook/>
+ <DemoUseEffect/> */}
 
+ <Provider store={store}>
+  <App/>
+ </Provider>
     
     </div>
     

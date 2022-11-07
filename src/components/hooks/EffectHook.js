@@ -1,24 +1,10 @@
-import React, {useEffect, useState} from "react";
+import React from "react";
+import useEffectHooks from "./useEffectHooks"
 
 function EffectHook(){
-    const [users,setUsers] = useState([]);
-    const [loading,setLoading] = useState(false);
-    const [error,setError] = useState("");
-
-    useEffect(()=>{
-        console.log("hello i am from effect")
-        setLoading(true);
-            fetch("https://jsonplaceholder.typicode.com/users").then((res)=>res.json()).then((result)=>{
-                setUsers(result)
-                console.log(loading);
-             }).catch((err)=>{
-                setError(err)
-    
-             }).finally(()=>{
-                setLoading(false)
-             })
-       
-    },[])
+    const data = useEffectHooks("https://jsonplaceholder.typicode.com/users")
+    console.log(data);
+    const [users,error,loading] = [...data]
 
     return(
         <div>
